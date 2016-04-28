@@ -1,0 +1,5 @@
+zweimal doppelpunkt in index start / inkrement
+a[:2] // gibt mir jedes 2te raus
+
+
+kronecker product ist diagonalmatrix mal eintrag in matrix in der sie eingebettet ist
