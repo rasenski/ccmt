@@ -14,8 +14,8 @@ def mfft(U, unit_sites):
 def main():
     for i in range(0,10,1):
         i=i/10
-        blubb(1,i,1-i)
-
+        blubb(1,i,i-1)
+#witzig hier @ parameter ndern kriegt man alles raus! auch aufgabe 3_2
 def blubb(t,t1,t2):
     N=256
     
