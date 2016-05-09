@@ -158,21 +158,21 @@ def main():
 	plt.title("Hc")
 	plt.show()
 	
-	#print the eigenvalues for gsclas, gsmod and arnoldi
-	#plt.subplot(1,4,1)
-	#plt.plot(x,diagonalization(gsclas(u, v))[1],'ro')
-	#plt.subplot(1,4,2)
-	#plt.plot(x,diagonalization(gsmod(u,v))[1],'bo')
-	#plt.subplot(1,4,3)
-	#plt.plot(x,LA.eigvals(arnoli(H)[2]),'go')
-	#plt.subplot(1,4,4)
-	#print the eigenvalues for H directly
-	#plt.plot(y,LA.eigvals(H), 'y.')
-	#plt.show()
+#	print the eigenvalues for gsclas, gsmod and arnoldi
+	plt.subplot(1,4,1)
+	plt.plot(x,diagonalization(gsclas(u, v))[1],'ro')
+	plt.subplot(1,4,2)
+	plt.plot(x,diagonalization(gsmod(u,v))[1],'bo')
+	plt.subplot(1,4,3)
+	plt.plot(x,LA.eigvals(arnoli(H)[2]),'go')
+	plt.subplot(1,4,4)
+#	print the eigenvalues for H directly
+	plt.plot(y,LA.eigvals(H), 'y.')
+	plt.show()
 
-#	print(np.dot(gsclas(basisset3, basisset1, basisset2)[0],gsclas(basisset3, basisset1, basisset2)[1]))
-#	print(np.dot(gsmod(basisset3, basisset2)[0],gsmod(basisset3, basisset2)[1]))
-#	print(np.dot(arnoli(H)[0][0],arnoli(H)[0][1]))
+	print(np.dot(gsclas(basisset3, basisset1, basisset2)[0],gsclas(basisset3, basisset1, basisset2)[1]))
+	print(np.dot(gsmod(basisset3, basisset2)[0],gsmod(basisset3, basisset2)[1]))
+	print(np.dot(arnoli(H)[0][0],arnoli(H)[0][1]))
 
 	
 	
