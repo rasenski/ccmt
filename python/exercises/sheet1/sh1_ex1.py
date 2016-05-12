@@ -11,7 +11,7 @@ def mfft(H, unit_sites):
     return H.T
 
 def main():
-    N=512
+    N=100000
     Hn=np.eye(N,k=-1)
     Hp=np.eye(N,k=+1)
     
